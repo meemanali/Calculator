@@ -1,16 +1,22 @@
-# Calculator
+# "Calculator"
 
-<h3>Images:</h3>
+Welcome to Calculator. It's a simple calculator app with beautiful UI. Some technologies used in this project are:
+
+* Able to handle errors
+* Tested on Android Nexus 5 Api 26 and Android Pixel Pro Api 33
+* Ultimate User Experience (UX)
+* Supports Day/Night themes
+
+# Preview:
+
+Successfull Result
 <p align="center">
-  <img src="https://github.com/meemanali/Calculator/blob/main/Calculator%201.png?raw=true" alt="Calculator Screenshot" width="350" title="Calculator">
-  <img src="https://github.com/meemanali/Calculator/blob/main/Calculator%202.png?raw=true" alt="Calculator Screenshot" width="350" title="Calculator">
+  <img src="https://github.com/meemanali/Calculator/blob/main/Calculator%201.png" alt="Calulator" width="310" title="Successfull Result">
 </p>
 
-<h3>Video:</h3>
-<video width="320" height="240">
-  <source src="https://github.com/meemanali/Calculator/blob/main/Calculator%20%E2%80%93%20activity_main.xml.mp4" type="video/mp4">
-</video> 
+Error
+<p align="center">
+  <img src="https://github.com/meemanali/Calculator/blob/main/Calculator%202.png" alt="Calulator" width="310" title="Error">
+</p>
 
-<!--
-[![Video Preview](http://img.youtube.com/vi/nX_inqaAzOI/0.jpg)]([[https://www.youtube.com/watch?v=nX_inqaAzOI&feature=youtu.be&hd=1](https://github.com/meemanali/Calculator/blob/main/Calculator%20%E2%80%93%20activity_main.xml.mp4)](https://github.com/meemanali/Calculator/blob/main/Calculator%20%E2%80%93%20activity_main.xml.mp4)https://github.com/meemanali/Calculator/blob/main/Calculator%20%E2%80%93%20activity_main.xml.mp4 "Calculator Video Preview")
--->
+https://github.com/meemanali/Calculator/assets/120294764/08eff6bf-88b7-4bc6-9e44-826e9b1614dd
