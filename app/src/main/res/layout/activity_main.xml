@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    tools:ignore="HardcodedText">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#171A23"
+        android:padding="6dp"
+        app:cardCornerRadius="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgDaY"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginHorizontal="6dp"
+                android:contentDescription="Day Mode"
+                android:src="@drawable/baseline_wb_sunny_24" />
+
+            <ImageView
+                android:id="@+id/imgNight"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginHorizontal="6dp"
+                android:contentDescription="Night Mode"
+                android:src="@drawable/baseline_nights_stay_24" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/txtNumbers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="monospace"
+        android:textColor="@color/white"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtResult"
+        app:layout_constraintEnd_toEndOf="@id/txtResult" />
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="25dp"
+        android:fontFamily="monospace"
+        android:textColor="@color/white"
+        android:textSize="27sp"
+        android:textAlignment="textEnd"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayoutCompat"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearLayoutCompat"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/button"
+        android:orientation="vertical"
+        android:padding="9dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/linearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <Button
+                android:id="@+id/btnClearAll"
+                android:layout_width="@dimen/btnWidth"
+                android:layout_height="@dimen/btnHeight"
+                android:layout_margin="@dimen/btnMargin"
+                android:backgroundTint="@color/btnColor"
+                android:text="C"
+                android:textColor="#E91E63"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/btnPow"
+                android:layout_width="@dimen/btnWidth"
+                android:layout_height="@dimen/btnHeight"
+                android:layout_margin="@dimen/btnMargin"
+                android:backgroundTint="@color/btnColor"
+                android:text="^"
+                android:textColor="#4CAF50"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/btnMod"
+                android:layout_width="@dimen/btnWidth"
+                android:layout_height="@dimen/btnHeight"
+                android:layout_margin="@dimen/btnMargin"
+                android:backgroundTint="@color/btnColor"
+                android:text="%"
+
+                android:textColor="#4CAF50"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/btnClear"
+                android:layout_width="@dimen/btnWidth"
+                android:layout_height="@dimen/btnHeight"
+                android:layout_margin="@dimen/btnMargin"
+                android:backgroundTint="@color/btnColor"
+                android:padding="0dp"
+                android:text="⌫"
+                android:textSize="23sp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:layout_constraintBottom_toTopOf="@id/linearLayout4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="@dimen/btnWidth"
+                android:layout_height="@dimen/btnHeight"
+                android:layout_margin="@dimen/btnMargin"
+                android:backgroundTint="@color/btnColor"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="@dimen/btnWidth"
+                android:layout_height="@dimen/btnHeight"
+                android:layout_margin="@dimen/btnMargin"
+                android:backgroundTint="@color/btnColor"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="@dimen/btnWidth"
+                android:layout_height="@dimen/btnHeight"
+                android:layout_margin="@dimen/btnMargin"
+                android:backgroundTint="@color/btnColor"
+                android:text="3" />
+
+            <Button
+                android:id="@+id/btnDivide"
+                android:layout_width="@dimen/btnWidth"
+                android:layout_height="@dimen/btnHeight"
+                android:layout_margin="@dimen/btnMargin"
+                android:backgroundTint="@color/btnColor"
+                android:text="/"
+                android:textColor="#4B96D1"
+                android:textSize="22sp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:layout_constraintBottom_toTopOf="@id/linearLayout3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <Button
+                android:id="@+id/btn4"
+                android:layout_width="@dimen/btnWidth"
+                android:layout_height="@dimen/btnHeight"
+                android:layout_margin="@dimen/btnMargin"
+                android:backgroundTint="@color/btnColor"
+                android:text="4" />
+
+            <Button
+                android:id="@+id/btn5"
+                android:layout_width="@dimen/btnWidth"
+                android:layout_height="@dimen/btnHeight"
+                android:layout_margin="@dimen/btnMargin"
+                android:backgroundTint="@color/btnColor"
+                android:text="5" />
+
+            <Button
+                android:id="@+id/btn6"
+                android:layout_width="@dimen/btnWidth"
+                android:layout_height="@dimen/btnHeight"
+                android:layout_margin="@dimen/btnMargin"
+                android:backgroundTint="@color/btnColor"
+                android:text="6" />
+
+            <Button
+                android:id="@+id/btnSub"
+                android:layout_width="@dimen/btnWidth"
+                android:layout_height="@dimen/btnHeight"
+                android:layout_margin="@dimen/btnMargin"
+                android:backgroundTint="@color/btnColor"
+                android:text="-"
+                android:textColor="#4B96D1"
+                android:textSize="22sp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:layout_constraintBottom_toTopOf="@id/linearLayout2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <Button
+                android:id="@+id/btn7"
+                android:layout_width="@dimen/btnWidth"
+                android:layout_height="@dimen/btnHeight"
+                android:layout_margin="@dimen/btnMargin"
+                android:backgroundTint="@color/btnColor"
+                android:text="7" />
+
+            <Button
+                android:id="@+id/btn8"
+                android:layout_width="@dimen/btnWidth"
+                android:layout_height="@dimen/btnHeight"
+                android:layout_margin="@dimen/btnMargin"
+                android:backgroundTint="@color/btnColor"
+                android:text="8" />
+
+            <Button
+                android:id="@+id/btn9"
+                android:layout_width="@dimen/btnWidth"
+                android:layout_height="@dimen/btnHeight"
+                android:layout_margin="@dimen/btnMargin"
+                android:backgroundTint="@color/btnColor"
+                android:text="9" />
+
+            <Button
+                android:id="@+id/btnAdd"
+                android:layout_width="@dimen/btnWidth"
+                android:layout_height="@dimen/btnHeight"
+                android:layout_margin="@dimen/btnMargin"
+                android:backgroundTint="@color/btnColor"
+                android:text="+"
+                android:textColor="#4B96D1"
+                android:textSize="22sp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/linearLayout0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:layout_constraintBottom_toTopOf="@id/linearLayout1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <Button
+                android:id="@+id/btnDot"
+                android:layout_width="@dimen/btnWidth"
+                android:layout_height="@dimen/btnHeight"
+                android:layout_margin="@dimen/btnMargin"
+                android:backgroundTint="@color/btnColor"
+                android:gravity="center"
+                android:text="." />
+
+            <Button
+                android:id="@+id/btn0"
+                android:layout_width="@dimen/btnWidth"
+                android:layout_height="@dimen/btnHeight"
+                android:layout_margin="@dimen/btnMargin"
+                android:backgroundTint="@color/btnColor"
+                android:text="0" />
+
+            <Button
+                android:id="@+id/btnEqual"
+                android:layout_width="@dimen/btnWidth"
+                android:layout_height="@dimen/btnHeight"
+                android:layout_margin="@dimen/btnMargin"
+                android:backgroundTint="@color/btnColor"
+                android:text="="
+                android:textColor="#3FEF0D"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/btnMul"
+                android:layout_width="@dimen/btnWidth"
+                android:layout_height="@dimen/btnHeight"
+                android:layout_margin="@dimen/btnMargin"
+                android:backgroundTint="@color/btnColor"
+                android:text="x"
+                android:textColor="#4B96D1"
+                android:textSize="22sp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

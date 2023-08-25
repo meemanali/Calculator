@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="please_write_correct_syntax">Please Write Correct Syntax</string>
+    <string name="error_division_by_zero">Error: Division by zero</string>
+    <string name="error_modulo_by_zero">Error: Modulo by zero</string>
+    <string name="error_invalid_operator">Error: Invalid operator</string>
+    <string name="error">Error: %1$s</string>
+</resources>
