@@ -1,6 +1,6 @@
 # "Calculator"
 
-Welcome to Calculator. It's a simple calculator app with beautiful UI. Some technologies used in this project are:
+Welcome to Calculator. It's a simple calculator app with beautiful UI. Some technologies / features in this project are:
 
 * Able to handle errors
 * Tested on Android Nexus 5 Api 26 and Android Pixel Pro Api 33
