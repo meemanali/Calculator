@@ -12,8 +12,8 @@ Welcome to Calculator. It's a simple calculator app with beautiful UI. Some tech
 Successfull Result
 
 <div>
-  <img src="https://github.com/meemanali/Calculator/blob/main/Calculator%201.png" alt="Calulator" width="310" title="Successfull Result">
-  <img src="https://github.com/meemanali/Calculator/blob/main/Calculator%202.png" alt="Calulator" width="310" title="Error">
+  <img src="https://github.com/meemanali/Calculator/blob/main/Calculator%201.png" alt="Calulator" width="230" title="Successfull Result">
+  <img src="https://github.com/meemanali/Calculator/blob/main/Calculator%202.png" alt="Calulator" width="230" title="Error">
 </div>
 
 https://github.com/meemanali/Calculator/assets/120294764/08eff6bf-88b7-4bc6-9e44-826e9b1614dd
